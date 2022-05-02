@@ -41,7 +41,7 @@ Backend API for a PetBacker [https://github.com/HarshalGhutkule/PetBacker-backen
 - Functionality to make reservation
 - Functionality to accept user reservation
 ## Home Page
-![Home Page](![image](https://user-images.githubusercontent.com/95927895/166201050-11c70200-4b96-4de2-9079-c9f54e657bc4.png))
+![Home Page](https://user-images.githubusercontent.com/95927895/166201050-11c70200-4b96-4de2-9079-c9f54e657bc4.png)
 ## Pet Sitter Detail Page
 ![Pet Sitter Detail Page](https://user-images.githubusercontent.com/95927895/166201307-0059fcdd-a4c4-4753-8b16-a7332728bfbc.png)
 ![Pet Sitter Detail Page](https://user-images.githubusercontent.com/95927895/166201440-4b56dec2-868d-4ddd-a589-1adbc62ce75a.png)
