@@ -160,7 +160,7 @@ const reducer = (state,{type,payload})=>{
 
   const onSubmit = (e) => {
     e.preventDefault();
-    axios.post(`https://petbacker.herokuapp.com/services/${id}`, data,{
+    axios.patch(`https://petbacker.herokuapp.com/services/${id}`, data,{
       headers: {
         'Authorization': `Bearer ${token}` 
       }}).then(()=>{
