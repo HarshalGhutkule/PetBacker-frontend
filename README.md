@@ -53,7 +53,7 @@ Backend API for a PetBacker [https://github.com/HarshalGhutkule/PetBacker-backen
 ![User Profile](https://user-images.githubusercontent.com/95927895/166202287-13c96bcd-5215-4f35-8379-9c2e481bee77.png)
 ## Admin Dashboard
 ![Admin Dashboard](https://user-images.githubusercontent.com/95927895/166202538-10be14d6-bd19-4886-91fc-dcdaae659d9c.png)
-## Admin Resevation Request
+## Admin Reservation Request
 ![Resevation Request](https://user-images.githubusercontent.com/95927895/166202694-1303d9e7-a988-477c-9194-132fd704a61c.png)
 ## Add Pet Sitter Admin
 ![Pet Sitter](https://user-images.githubusercontent.com/95927895/166202851-dfadafa7-8aef-44a0-a959-5bc2cb646cd4.png)
