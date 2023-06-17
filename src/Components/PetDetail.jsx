@@ -77,7 +77,7 @@ export const PetDetail = () => {
       },[])
     
       const getData = () => {
-        axios.get(`https://petbacker.herokuapp.com/services/${id}`,{
+        axios.get(`https://petbacker-backend.onrender.com/${id}`,{
             headers: {
               'Authorization': `Bearer ${token}` 
             }}).then((res)=>{

@@ -93,7 +93,7 @@ export const Home = () => {
   const searchBlock = (e)=>{
 
     if(e.target.value !== ""){
-      axios.get(`https://petbacker.herokuapp.com/services/city/${e.target.value}`,{
+      axios.get(`https://petbacker-backend.onrender.com/city/${e.target.value}`,{
         headers: {
           'Authorization': `Bearer ${token}` 
         }}).then((res)=>{
@@ -107,7 +107,7 @@ export const Home = () => {
 
   const sorting = (a)=>{
 
-    axios.get(`https://petbacker.herokuapp.com/services?page=${pageof}&size=5&sort=${a}`,{
+    axios.get(`https://petbacker-backend.onrender.com?page=${pageof}&size=5&sort=${a}`,{
       headers: {
         'Authorization': `Bearer ${token}` 
       }}).then((res)=>{
@@ -126,7 +126,7 @@ export const Home = () => {
   }
 
   const getData = (pageof) => {
-    axios.get(`https://petbacker.herokuapp.com/services?page=${pageof}&size=5`,{
+    axios.get(`https://petbacker-backend.onrender.com?page=${pageof}&size=5`,{
       headers: {
         'Authorization': `Bearer ${token}` 
       }}).then((res)=>{
