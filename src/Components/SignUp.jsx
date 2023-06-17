@@ -66,7 +66,7 @@ export const SignUp = () => {
 
   const onSubmit = (data) => {
 
-    axios.post("https://petbacker.herokuapp.com/sendotp", data).then((res)=>{
+    axios.post("https://petbacker-backend.onrender.com/sendotp", data).then((res)=>{
         data.otp = res.data.otp;
         dispatch(confirmOtp(data))
         navigate("/ConfirmOtp");

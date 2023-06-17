@@ -52,13 +52,13 @@ export const Dashboard = () => {
   }, []);
 
   const getData = () => {
-      axios.get("https://petbacker-backend.onrender.com").then((res)=>{
+      axios.get("https://petbacker-backend.onrender.com/services").then((res)=>{
         setData(res.data);
       }).catch((err)=>{alert(err.message)})
   };
 
   const deleteEntry = (id)=>{
-    axios.delete(`https://petbacker-backend.onrender.com/${id}`,{
+    axios.delete(`https://petbacker-backend.onrender.com/services/${id}`,{
         headers: {
           'Authorization': `Bearer ${token}` 
         }}).then(()=>{

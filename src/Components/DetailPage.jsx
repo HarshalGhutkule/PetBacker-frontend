@@ -31,7 +31,7 @@ export const DetailPage = () => {
   },[])
 
   const getData = ()=>{
-    axios.get(`https://petbacker-backend.onrender.com/${id}`,{
+    axios.get(`https://petbacker-backend.onrender.com/services/${id}`,{
       headers: {
         'Authorization': `Bearer ${token}` 
       }}).then((res)=>{

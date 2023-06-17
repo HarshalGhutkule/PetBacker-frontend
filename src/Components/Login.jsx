@@ -64,7 +64,7 @@ export const LogIn = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    axios.post("https://petbacker.herokuapp.com/login", data).then((res)=>{
+    axios.post("https://petbacker-backend.onrender.com/login", data).then((res)=>{
         alert("Login successfully");
         dispatch(addToken(res.data.token));
         dispatch(userData(res.data.user));

@@ -67,7 +67,7 @@ const userOtp = useSelector((store) => store.userOtp);
     }
     else{
         delete data.otpOfUser;
-        axios.post("https://petbacker.herokuapp.com/register", data).then(()=>{
+        axios.post("https://petbacker-backend.onrender.com/register", data).then(()=>{
         alert("Registration successful");
         navigate("/LogIn");
         }).catch(()=>{

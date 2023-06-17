@@ -66,7 +66,7 @@ export const UserDashboard = () => {
       },[])
     
       const getData = () => {
-        axios.get(`https://petbacker.herokuapp.com/petdetails/${userData._id}`,{
+        axios.get(`https://petbacker-backend.onrender.com/petdetails/${userData._id}`,{
             headers: {
               'Authorization': `Bearer ${token}` 
             }}).then((res)=>{
@@ -75,7 +75,7 @@ export const UserDashboard = () => {
         };
 
         const deleteEntry = (id)=>{
-          axios.delete(`https://petbacker.herokuapp.com/petdetails/${id}`,{
+          axios.delete(`https://petbacker-backend.onrender.com/petdetails/${id}`,{
               headers: {
                 'Authorization': `Bearer ${token}` 
               }}).then(()=>{

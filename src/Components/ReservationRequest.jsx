@@ -63,7 +63,7 @@ export const ReservationRequest = () => {
       },[])
     
       const getData = () => {
-        axios.get(`https://petbacker.herokuapp.com/petdetails`,{
+        axios.get(`https://petbacker-backend.onrender.com/petdetails`,{
             headers: {
               'Authorization': `Bearer ${token}` 
             }}).then((res)=>{
@@ -73,7 +73,7 @@ export const ReservationRequest = () => {
 
         const changeStatus = (id)=>{
             if(data.status === "true") return;
-            axios.patch(`https://petbacker.herokuapp.com/petdetails/${id}`,{status:"true"},{
+            axios.patch(`https://petbacker-backend.onrender.com/petdetails/${id}`,{status:"true"},{
                 headers: {
                   'Authorization': `Bearer ${token}` 
                 }}).then(()=>{
@@ -84,7 +84,7 @@ export const ReservationRequest = () => {
         }
 
         const deleteEntry = (id)=>{
-          axios.delete(`https://petbacker.herokuapp.com/petdetails/${id}`,{
+          axios.delete(`https://petbacker-backend.onrender.com/petdetails/${id}`,{
               headers: {
                 'Authorization': `Bearer ${token}` 
               }}).then(()=>{

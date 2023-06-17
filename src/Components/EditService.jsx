@@ -149,7 +149,7 @@ const reducer = (state,{type,payload})=>{
   },[])
 
   const getData = () => {
-    axios.get(`https://petbacker-backend.onrender.com/${id}`,{
+    axios.get(`https://petbacker-backend.onrender.com/services/${id}`,{
         headers: {
           'Authorization': `Bearer ${token}` 
         }}).then((res)=>{
@@ -160,7 +160,7 @@ const reducer = (state,{type,payload})=>{
 
   const onSubmit = (e) => {
     e.preventDefault();
-    axios.patch(`https://petbacker-backend.onrender.com/${id}`, data,{
+    axios.patch(`https://petbacker-backend.onrender.com/services/${id}`, data,{
       headers: {
         'Authorization': `Bearer ${token}` 
       }}).then(()=>{

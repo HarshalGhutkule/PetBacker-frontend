@@ -77,7 +77,7 @@ export const PetDetail = () => {
       },[])
     
       const getData = () => {
-        axios.get(`https://petbacker-backend.onrender.com/${id}`,{
+        axios.get(`https://petbacker-backend.onrender.com/services/${id}`,{
             headers: {
               'Authorization': `Bearer ${token}` 
             }}).then((res)=>{
@@ -103,7 +103,7 @@ export const PetDetail = () => {
     console.log(data);
     data.name = dataof.Name;
     data.cost = dataof.Cost;
-    axios.post("https://petbacker.herokuapp.com/petdetails", data,{
+    axios.post("https://petbacker-backend.onrender.com/petdetails", data,{
         headers: {
           'Authorization': `Bearer ${token}` 
         }}).then(()=>{

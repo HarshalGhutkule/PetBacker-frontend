@@ -71,7 +71,7 @@ const reduxDispatch = useDispatch();
 
 
   const getData = ()=>{
-      axios.get(`https://petbacker.herokuapp.com/users/${user._id}`,{
+      axios.get(`https://petbacker-backend.onrender.com/users/${user._id}`,{
         headers: {
           'Authorization': `Bearer ${token}` 
         }}).then((res)=>{
@@ -85,7 +85,7 @@ const reduxDispatch = useDispatch();
     },[])
 
   const onSubmit = (data) => {
-    axios.patch(`https://petbacker.herokuapp.com/users/${user._id}`,data,{
+    axios.patch(`https://petbacker-backend.onrender.com/users/${user._id}`,data,{
         headers: {
           'Authorization': `Bearer ${token}` 
         }}).then(()=>{
@@ -124,7 +124,7 @@ const reduxDispatch = useDispatch();
         setError(true);
     }
     else{
-        axios.patch(`https://petbacker.herokuapp.com/reset/${user._id}`,state,{
+        axios.patch(`https://petbacker-backend.onrender.com/reset/${user._id}`,state,{
         headers: {
           'Authorization': `Bearer ${token}`
         }}).then((res)=>{

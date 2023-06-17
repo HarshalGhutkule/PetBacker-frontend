@@ -97,7 +97,7 @@ export const AddService = () => {
 
 
   const onSubmit = (data) => {
-    axios.post("https://petbacker-backend.onrender.com", data,{
+    axios.post("https://petbacker-backend.onrender.com/services", data,{
       headers: {
         'Authorization': `Bearer ${token}` 
       }}).then(()=>{
